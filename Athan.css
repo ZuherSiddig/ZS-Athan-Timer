@@ -1,0 +1,29 @@
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+
+
+body{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#t-title{
+    font-size: 150px;
+    font-weight: bold;
+}
+.header{
+    background-color:linergridan;
+}
