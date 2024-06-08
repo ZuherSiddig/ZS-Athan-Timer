@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athan Timer</title>
+    <link rel="stylesheet" href="Athan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div  style="height: 120vh;" >
+        <!--CITYES + DATE--> 
+
+        <div>
+             <div id="city-N-D" style="margin-right: 50px; margin-left: 50px; color: white;background-image: url(khartoum.jpg); border-radius: 4px;">
+                <h3 id="t-title" style="color: black;" >الخرطوم</h3>
+                <h6 id="day-week"style="font-size: 30px; font-weight: lighter; margin-right: 10px">الاحد28ابريل</h6>
+             </div>
+               
+        </div>
+         <!--CITYES + DATE-->
+
+         
+
+         <hr style="margin: 0px 50px;">
+
+         <!--TIMES + CITY-->
+         <div class="center" style="height: 200px;  margin-top: 50px;  justify-content: space-around; " >
+             <!--CARDS-->
+            <!--TIME-->
+            <div id="time" style="height: 100%; background-color: #c7b198; width: 120px; border-radius: 4px;box-shadow: 1px 2px 1px #4b2b30; " >
+             <!--HEADER-->
+             <div  class="header" id="prayer-time" style="background-color: #4b2b30; border-radius: 4px;">
+                <h3 class="t-name" style="color: white;">الفجر</h3>
+             </div>
+             <!--HEADER-->
+                  
+             <!--TIME BODY-->
+                 <div class="body center" id="clock" style="height: 80%;">
+                    <h3 class="center" id="fajr-time" style="color:  #4b2b30;">
+                    5:40
+                    </h3>
+                </div>
+             <!--TIME BODY-->
+        
+             <!--TIME-->
+            </div>
+
+
+            <div id="time" style="height: 100%; background-color: #c7b198; width:120px;border-radius: 4px; box-shadow: 1px 2px 1px #4b2b30; " >
+                <!--HEADER-->
+                <div  class="header" id="prayer-time" style="background-color: #4b2b30; border-radius: 4px;">
+                   <h3 class="t-name" style="color: white;">الشروق</h3>
+                </div>
+                <!--HEADER-->
+                     
+                <!--TIME BODY-->
+                    <div class="body center" id="clock" style="height: 80%;">
+                       <h3 class="center" id="shroq-time" style="color: #4b2b30;">
+                       5:40
+                       </h3>
+                   </div>
+                <!--TIME BODY-->
+           
+                <!--TIME-->
+               </div>
+
+               <div id="time" style="height: 100%; background-color: #c7b198; width:120px; border-radius: 4px; box-shadow: 1px 2px 1px #4b2b30;" >
+                <!--HEADER-->
+                <div  class="header" id="prayer-time" style="background-color: #4b2b30; border-radius: 4px;">
+                   <h3 class="t-name" style="color: white;">الظهر</h3>
+                </div>
+                <!--HEADER-->
+                     
+                <!--TIME BODY-->
+                    <div class="body center" id="clock" style="height: 80%;">
+                       <h3 class="center" id="thor-time" style="color: #4b2b30;">
+                       5:40
+                       </h3>
+                   </div>
+                <!--TIME BODY-->
+           
+                <!--TIME-->
+               </div>
+
+
+               <div id="time" style="height: 100%; background-color:  #c7b198; width:120px; border-radius: 4px; box-shadow: 1px 2px 1px #4b2b30;" >
+                <!--HEADER-->
+                <div  class="header" id="prayer-time" style="background-color: #4b2b30; border-radius: 4px;">
+                   <h3 class="t-name" style="color: white;">العصر</h3>
+                </div>
+                <!--HEADER-->
+                     
+                <!--TIME BODY-->
+                    <div class="body center" id="clock" style="height: 80%;">
+                       <h3 class="center" id="asr-time" style="color: #4b2b30;">
+                       5:40
+                       </h3>
+                   </div>
+                <!--TIME BODY-->
+           
+                <!--TIME-->
+               </div>
+
+
+
+               <div id="time" style="height: 100%; background-color:#c7b198; width:120px; border-radius: 4px; box-shadow: 1px 2px 1px #4b2b30;" >
+                <!--HEADER-->
+                <div  class="header" id="prayer-time" style="background-color: #4b2b30; border-radius: 4px;">
+                   <h3 class="t-name" style="color: white;">المغرب</h3>
+                </div>
+                <!--HEADER-->
+                     
+                <!--TIME BODY-->
+                    <div class="body center" id="clock" style="height: 80%;">
+                       <h3 class="center" id="sunset-time" style="color: #4b2b30;">
+                       5:40
+                       </h3>
+                   </div>
+                <!--TIME BODY-->
+           
+                <!--TIME-->
+               </div>
+
+
+
+               <div id="time" style="height: 100%; background-color: #c7b198; width:120px; border-radius: 4px; box-shadow: 1px 2px 1px #4b2b30; " >
+                <!--HEADER-->
+                <div  class="header" id="prayer-time" style="background-color: #4b2b30; border-radius: 4px;">
+                   <h3 class="t-name" style="color: white;">العشاء</h3>
+                </div>
+                <!--HEADER-->
+                     
+                <!--TIME BODY-->
+                    <div class="body center" id="clock" style="height: 80%;">
+                       <h3 class="center" id="isha-time" style="color: #4b2b30;">
+                       5:40
+                       </h3>
+                   </div>
+                <!--TIME BODY-->
+           
+                <!--TIME-->
+               </div>
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+            <!--//CARDS//-->
+        </div>
+         <!--TIMES + CITY-->
+
+
+         <!--OPTION-->
+         <div class="center" style="margin-top: 100px; margin-bottom: 50px; ">
+            <select name="" id="cities-name" style="width: 300px; height: 40px; font-size: 20px; background: none; border-radius: 20px; border-color: #4b2b30; color: black; padding: 4px;  font-family: 'Noto Kufi Arabic', sans-serif; ">
+                <!-- <option value="">الخرطوم</option>
+                <option value="">الابيض</option>
+                <option value="">بورسودان</option>
+                <option value="">كوستي</option> -->
+            </select>
+         </div>
+            <!--OPTION-->
+    </div>
+    
+</body>
+    <script src="Athan.js"></script>
+   
+</html>
